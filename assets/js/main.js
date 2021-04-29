@@ -66,3 +66,23 @@ if (parola_palindroma(parola)) {
     document.getElementById("msg").innerHTML = "La tua parola non è palindroma!";
 }
 document.getElementById("tua_parola").innerHTML = "La tua parola è: " + parola;
+
+
+//altro metodo per parola palindroma
+
+/* var parola = prompt("Inserisci una parola!");
+
+var parolaPalindroma = "";
+var lettera;
+var i = parola.length - 1;
+while (i >= 0) {
+  lettera = parola[i];
+  parolaPalindroma = parolaPalindroma + lettera;
+  i--;
+}
+
+if(parola == parolaPalindroma){
+    console.log("palindroma");
+  } else {
+    console.log("non palindroma");
+} */
