@@ -1,6 +1,6 @@
 //Pari e Dispari:
 //Funzione per numero random tra 1 e 5
-/* function numeroRandom() {
+function numeroRandom() {
     var numero_random = Math.ceil(Math.random() * 5);
     return numero_random;
 }
@@ -43,7 +43,7 @@ if (risultato_pari_dispari == pari_dispari_utente) {
 } else {
     messaggio = "Hai perso! E' uscito " + risultato_pari_dispari + "!";
 }
-document.getElementById("messaggio").innerHTML = messaggio; */
+document.getElementById("messaggio").innerHTML = messaggio;
 
 
 
