@@ -1,6 +1,6 @@
 //Pari e Dispari:
 //Funzione per numero random tra 1 e 5
-function numeroRandom() {
+/* function numeroRandom() {
     var numero_random = Math.ceil(Math.random() * 5);
     return numero_random;
 }
@@ -43,4 +43,20 @@ if (risultato_pari_dispari == pari_dispari_utente) {
 } else {
     messaggio = "Hai perso! E' uscito " + risultato_pari_dispari + "!";
 }
-document.getElementById("messaggio").innerHTML = messaggio;
+document.getElementById("messaggio").innerHTML = messaggio; */
+
+
+
+//Palidroma:
+//Chiedere all’utente di inserire una parola
+var parola = prompt("Inserisci una parola!");
+
+//Creare una funzione per capire se la parola inserita è palindroma
+var parola_pal = parola.split(""); //metto i caratteri della parola in un array
+parola_pal = parola_pal.reverse();
+parola_pal = parola_pal.join("");
+if (parola_pal == parola) {
+    console.log("Palindroma!");
+} else {
+    console.log("Non è palindroma!");
+}
