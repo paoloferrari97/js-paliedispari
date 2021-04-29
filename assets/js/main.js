@@ -49,17 +49,20 @@ document.getElementById("messaggio").innerHTML = messaggio; */
 
 //Palidroma:
 //Chiedere all’utente di inserire una parola
-var parola = prompt("Inserisci una parola!").toLowerCase();
-
 //Creare una funzione per capire se la parola inserita è palindroma
-var parola_pal = parola.split(""); //metto i caratteri della parola in un array
-parola_pal = parola_pal.reverse();
-parola_pal = parola_pal.join("");
-if (parola_pal == parola) {
+function parola_palindroma(parola) {
+    var parola_contrario = parola.split(""); //metto i caratteri della parola singolarmente in un array
+    parola_contrario = parola_contrario.reverse(); //giro l'array al contrario
+    parola_contrario = parola_contrario.join("");  //unisco elementi array in una variabile
+    if (parola_contrario == parola) {
+        return true;
+    }
+    return false;
+}
+var parola = prompt("Inserisci una parola!").toLowerCase();
+if (parola_palindroma(parola)) {
     document.getElementById("msg").innerHTML = "La tua parola è palindroma!";
 } else {
     document.getElementById("msg").innerHTML = "La tua parola non è palindroma!";
 }
-
 document.getElementById("tua_parola").innerHTML = "La tua parola è: " + parola;
-document.getElementById("parola_pal").innerHTML = "La tua parola al contrario è: " + parola_pal;
