@@ -54,6 +54,7 @@ function parola_palindroma(parola) {
     var parola_contrario = parola.split(""); //metto i caratteri della parola singolarmente in un array
     parola_contrario = parola_contrario.reverse(); //giro l'array al contrario
     parola_contrario = parola_contrario.join("");  //unisco elementi array in una variabile
+    //posso unire tutto cioè parola_contrario = parola.split("").reverse().join("");
     if (parola_contrario == parola) {
         return true;
     }
